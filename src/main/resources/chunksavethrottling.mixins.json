@@ -1,0 +1,15 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "de.wormbo.chunksavethrottling.mixin",
+  "compatibilityLevel": "JAVA_8",
+  "refmap": "chunksavethrottling.refmap.json",
+  "mixins": [
+    "ChunkMapMixin"
+  ],
+  "client": [
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}

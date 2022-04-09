@@ -1,0 +1,31 @@
+modLoader = "javafml"
+loaderVersion = "[39,)"
+license = "MIT"
+#issueTrackerURL="http://my.issue.tracker/"
+
+[[mods]]
+modId = "chunksavethrottling"
+version = "${file.jarVersion}"
+displayName = "Chunk Save Throttling"
+#updateJSONURL="http://myurl.me/"
+#displayURL="http://example.com/"
+#logoFile="chunk-save-throttling.png"
+#credits="Thanks for this example mod goes to Java"
+authors = "Wormbo"
+description = '''
+Ports the 1.18.2 fix for chunk saving "spam" to the 1.18.1 Forge world.
+'''
+
+[[dependencies.chunksavethrottling]]
+modId = "forge" #mandatory
+mandatory = true #mandatory
+versionRange = "[39,)"
+ordering = "NONE"
+side = "SERVER"
+
+[[dependencies.chunksavethrottling]]
+modId = "minecraft"
+mandatory = true
+versionRange = "1.18.1"
+ordering = "NONE"
+side = "SERVER"
